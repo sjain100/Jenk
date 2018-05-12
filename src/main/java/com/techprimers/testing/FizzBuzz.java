@@ -7,7 +7,7 @@ public class FizzBuzz {
         if (number == 0) throw new IllegalArgumentException("Number must not be 0");
         if (number % 3 == 0) return "Fizz";
         if (number % 5 == 0) return "Buzz";
-        if (number % 4 == 1) return number;
+        if (number % 4 == 1) return "1";
 
 
         return String.valueOf(number);
