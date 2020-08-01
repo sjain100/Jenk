@@ -55,18 +55,17 @@
 
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>myMavenRepo.read</id>
-            <url>https://mymavenrepo.com/repo/nt53apKSLBbU7a69aKSB/</url>
-        </repository>
-    </repositories>
-
-    <distributionManagement>
-        <repository>
-            <id>myMavenRepo.write</id>
-            <url>https://mymavenrepo.com/repo/pejeUdAw3kbobPZ57yIa/</url>
-        </repository>
-    </distributionManagement>
+  <distributionManagement>
+	<repository>
+		<id>deployment</id>
+		<name>Internal Snapshot Release</name>
+		<url>http://localhost:8081/repository/SAMPLE-JUNIT-REL/</url>
+	</repository>
+	<snapshotRepository>
+		<id>deployment</id>
+		<name>Internal Snapshot Release</name>
+		<url>http://localhost:8081/repository/SAMPLE-JUNIT-SNAP/</url>
+	</snapshotRepository>
+  </distributionManagement>
 
 </project>
